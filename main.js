@@ -65,7 +65,7 @@ async function spamRedisChannel () {
                 status: cameras[i].title,
             }
             client.publish(CHANNEL_NAME, JSON.stringify(record))
-            await sleep(sleepTimePerCamera(15, MESSAGES_TO_EMIT))
+            await sleep(sleepTimePerCamera(10, MESSAGES_TO_EMIT))
         }
 
     }
